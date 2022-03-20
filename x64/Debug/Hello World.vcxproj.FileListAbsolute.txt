@@ -1,2 +1,0 @@
-E:\Users\Exata\Documents\Visual Studio\Hello World\x64\Debug\Hello World.exe
-E:\Users\Exata\Documents\Visual Studio\Programs\x64\Debug\Programs.exe
