@@ -1,0 +1,4 @@
+﻿  Generating code
+  Previous IOBJ not found, fall back to full compilation.
+g:\outros computadores\caiodesktop\visual studio\c e c++\second-degree-equation-solver-in-c--\bhaskara.cpp : fatal error C1083: Cannot open compiler intermediate file: 'x64\Release\Programs.ipdb': Permission denied
+LINK : fatal error LNK1257: code generation failed
