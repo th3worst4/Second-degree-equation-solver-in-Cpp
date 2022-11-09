@@ -48,13 +48,13 @@ int main() {
 	char ra;
 	
 	do {
-		wprintf(L"Calculadora de Equação do 2º Grau \nvr: 1.3.2\nPor: Caio Couto \nFeito em C++\n\n\n");
+		wprintf(L"Calculadora de EquaÃ§Ã£o do 2Âº Grau \nvr: 1.3.2\nPor: Caio Couto \nFeito em C++\n\n\n");
 		double a, b, c, d, x1, x2;
 		
 		cout << "Insira a" << endl;
 		cin >> ans;
 		while (ans == "0" || !isNum(ans)) {
-			wprintf(L"a não pode ser 0 ou um caractere inválido,\nInsira a novamente\n");
+			wprintf(L"a nÃ£o pode ser 0 ou um caractere invÃ¡lido,\nInsira a novamente\n");
 			cin >> ans;
 		}
 		stringstream temp1(ans);
@@ -63,7 +63,7 @@ int main() {
 		cout << "Insira b" << endl;
 		cin >> ans;
 		while (!isNum(ans)) {
-			wprintf(L"b não pode ser um caractere inválido,\nInsira b novamente\n");
+			wprintf(L"b nÃ£o pode ser um caractere invÃ¡lido,\nInsira b novamente\n");
 			cin >> ans;
 		}
 		stringstream temp2(ans);
@@ -72,7 +72,7 @@ int main() {
 		cout << "Insira c" << endl;
 		cin >> ans;
 		while (!isNum(ans)) {
-			wprintf(L"c não pode ser um caractere inválido,\nInsira c novamente\n");
+			wprintf(L"c nÃ£o pode ser um caractere invÃ¡lido,\nInsira c novamente\n");
 			cin >> ans;
 		}
 		stringstream temp3(ans);
@@ -80,26 +80,26 @@ int main() {
 		
 		d = delta(a, b, c);
 
-		wprintf(L"O delta é %f \n", d);
+		wprintf(L"O delta Ã© %f \n", d);
 
 		if (d >= 0) {
 			tie(x1, x2) = findx(a, b, d);
-			wprintf(L"x_1 é: %f e x_2 é: %f \n", x1, x2);
+			wprintf(L"x_1 Ã©: %f e x_2 Ã©: %f \n", x1, x2);
 		}
 		else {
 			double sq, b_;
 			sq = sqrt(d * -1) / 2.0 * a;
 			sq = abs(sq);
 			b_ = -b / 2.0 * a;
-			wprintf(L"x_1 é: %f+%fi  e ", b_, sq);
-			wprintf(L"x_2 é: %f-%fi \n", b_, sq);
+			wprintf(L"x_1 Ã©: %f+%fi  e ", b_, sq);
+			wprintf(L"x_2 Ã©: %f-%fi \n", b_, sq);
 		}
 		ask:
-		wprintf(L"Deseja rodar o programa novamente? \n1-Sim \n2-Não \n");
+		wprintf(L"Deseja rodar o programa novamente? \n1-Sim \n2-NÃ£o \n");
 		cin >> r;
 		
 		if(r.size() > 1) {
-			wprintf(L"Resposta inválida!\n");
+			wprintf(L"Resposta invÃ¡lida!\n");
 			goto ask;
 		}
 		else {
@@ -114,8 +114,8 @@ int main() {
 		case '2': rodar = false; 
 			return 0;
 			break;
-		default: wprintf(L"Resposta inválida!\n");
-			wprintf(L"Deseja rodar o programa novamente? \n1-Sim \n2-Não \n");
+		default: wprintf(L"Resposta invÃ¡lida!\n");
+			wprintf(L"Deseja rodar o programa novamente? \n1-Sim \n2-NÃ£o \n");
 			cin >> r;
 			goto ask;
 			break;
